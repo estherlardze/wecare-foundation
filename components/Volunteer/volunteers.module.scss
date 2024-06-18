@@ -1,0 +1,46 @@
+.volunteersContainer {
+	display: flex;
+	flex-wrap: nowrap; /* Prevent wrapping */
+	// overflow-x: auto; /* Enable horizontal scrolling */
+	margin-bottom: 3rem;
+	gap: 1rem;
+	// padding: 1rem;
+	width: 88%;
+	box-sizing: border-box;
+	height: 36rem;
+	scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.profileCard {
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	margin-right: 1rem; /* Adjust margin for spacing */
+	flex: 0 0 25rem; /* Initial width of each card */
+	transition: transform 0.3s ease;
+	height: 100%; /* Ensure cards take full height */
+	box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+	.profileCard {
+		flex: 0 0 calc(50% - 1rem); /* Two cards per row */
+	}
+}
+
+@media (max-width: 768px) {
+	.volunteersContainer {
+		flex-wrap: wrap; 
+		justify-content: center; /* Center items in the container */
+		height: auto; /* Adjust height to fit content */
+		overflow-x: hidden;
+		padding: 0;
+	}
+
+	.profileCard {
+		flex: 0 0 calc(100% - 1rem); /* One card per row */
+		margin-bottom: 1rem; /* Space between cards */
+	}
+}

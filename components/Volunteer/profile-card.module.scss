@@ -1,0 +1,118 @@
+// profile-card.module.scss
+
+.volunteersContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+	align-self: center;
+	// width: 80%;
+	
+}
+
+.profileCard {
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column; // Keep column for better alignment within the card
+	margin: 1rem;
+	overflow: hidden;
+	width: 85%;
+	max-width: 25rem; // Adjust as needed to reduce the width of each card
+	box-sizing: border-box;
+	background-color: #fff;
+	transition: transform 0.3s ease;
+	height: 32rem; // Adjust the height as needed
+
+	&:hover {
+		transform: translateY(-0.5rem);
+	}
+
+	@media (min-width: 768px) {
+		max-width: calc(50% - 2rem); // Two cards per row, considering margins
+	}
+
+	@media (min-width: 1024px) {
+		max-width: calc(33.33% - 2rem); // Three cards per row, considering margins
+	}
+}
+
+.volunteerCard {
+	width: 100%; // Adjust as needed
+	height: 55%; // Adjust as needed
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// padding: 1rem;
+	background-color: red;
+
+	.imageContainerIcon {
+		// border-radius: 50%;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		object-fit:fill;
+	}
+}
+
+.profileInfo {
+	padding: 0.5rem 0 0rem 1rem;
+	text-align: left; // Adjust for better horizontal layout
+
+	.name {
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin: 0;
+		color: #333;
+	}
+}
+
+.profileContainer {
+	height: 45%;
+}
+
+.profileInfo1 {
+	padding: 0.5rem 0 0.5rem 1rem;
+	text-align: left; 
+
+	.rolePosition {
+		font-size: 0.9rem;
+		font-weight: 500;
+		color: #666;
+	}
+}
+
+.profileDescription {
+	padding: 0.5rem 0 0.5rem 1rem;
+	text-align: left; 
+
+	.descriptionText {
+		font-size: 0.75rem;
+		color: #333;
+		margin: 0;
+	}
+}
+
+.contactIcons {
+	padding-left: 1rem;
+	text-align: center;
+	// background-color: #f9f9f9;
+
+	.socialMediaIcons {
+		display: flex;
+		//   justify-content: center;
+		gap: 1rem;
+
+		.icon {
+			font-size: 1rem;
+			color: #f72424;
+			cursor: pointer;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: #ff2828;
+			}
+		}
+	}
+}
