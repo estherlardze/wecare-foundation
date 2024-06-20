@@ -72,19 +72,19 @@ export const contacts = [
     {
         id:1,
         title:'Visit us',
-        content:'92 Bowery St., New York, NY 10013, USA',
+        content:'GW-0101-2291, Amasaman, Accra',
         icon:FaLocationDot
     },
     {
-        id:1,
+        id:2,
         title:'Mail us',
-        content:'bighearts.donation@mail.com',
+        content:' wchf.org@gmail.com',
         icon:BsSendFill
     },
     {
-        id:1,
+        id:3,
         title:'Call us',
-        content:'+1 (880) 555 353 505',
+        content:'+233 50 361 4304 / +233 20 668 9419',
         icon:IoCall
     }
 

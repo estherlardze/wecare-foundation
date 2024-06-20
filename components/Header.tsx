@@ -16,9 +16,9 @@ const Header = ({ heading, className }: HeadingProps) => {
 
   return (
     <div className={headerClasses}>
-      <div className="bg-black/20 w-full h-[70vh] flex flex-col justify-center items-center">
-        <h1 className="text-white font-bold text-5xl">{heading}</h1> <br />
-        <div className="flex gap-1 items-center group">
+      <div className="bg-black/20 w-full h-[70vh] flex flex-col justify-center items-center" >
+        <h1 className="text-white font-bold text-5xl" data-aos="zoom-in">{heading}</h1> <br />
+        <div className="flex gap-1 items-center group" data-aos="zoom-in">
           <Link
             href="/"
             className="uppercase text-white group-hover:text-black font-semibold transition-all"

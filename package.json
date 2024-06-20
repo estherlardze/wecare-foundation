@@ -12,6 +12,8 @@
     "@mantine/carousel": "^7.9.2",
     "@mantine/core": "^7.9.2",
     "@mantine/hooks": "^7.9.2",
+    "aos": "^2.3.4",
+    "axios": "^1.7.2",
     "classnames": "^2.5.1",
     "embla-carousel-autoplay": "^7.1.0",
     "embla-carousel-react": "^7.1.0",
@@ -20,10 +22,12 @@
     "react-dom": "^18",
     "react-icons": "^5.2.1",
     "react-material-ui-carousel": "^3.4.2",
+    "react-toastify": "^10.0.5",
     "sass": "^1.77.6",
     "swiper": "^10.3.1"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
