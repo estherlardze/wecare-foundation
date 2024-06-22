@@ -3,13 +3,13 @@
 import { FC } from "react";
 import Image from "next/image";
 import styles from "./profile-card.module.scss";
-import { FaEnvelope, FaWhatsapp, FaTimes, FaFacebook } from "react-icons/fa"; // Import icons
+// import { FaEnvelope, FaWhatsapp, FaTimes, FaFacebook } from "react-icons/fa"; // Import icons
 
 type VolunteerType = {
 	name: string;
 	photo: string;
 	role: string;
-	description: string;
+	// description: string;
 	id: number;
 };
 
@@ -37,17 +37,15 @@ const ProfileCard: FC<ProfileCardProps> = ({ volunteer }) => {
 			<div className={styles.profileInfo1}>
 				<div className={styles.rolePosition}>{volunteer.role}</div>
 			</div>
-			<div className={styles.profileDescription}>
-				<p className={styles.descriptionText}>{volunteer.description}</p>
-			</div>
-			<div className={styles.contactIcons}>
+		
+			{/* <div className={styles.contactIcons}>
 				<div className={styles.socialMediaIcons}>
 					<FaEnvelope className={styles.icon} />
 					<FaWhatsapp className={styles.icon} />
 					<FaTimes className={styles.icon} />
 					<FaFacebook className={styles.icon} />
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

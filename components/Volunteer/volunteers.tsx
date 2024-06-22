@@ -2,10 +2,13 @@
 
 import { FC, useEffect, useState } from "react";
 import ProfileCard from "./ProfileCard";
-import styles from "./volunteers.module.scss"; // Adjust the import based on your setup
+import styles from "./volunteers.module.scss";
+import scroll from "./autoscroll.module.scss"
+import classNames from "classnames";
 import { volunteers, VolunteerType } from "./volunteersData";
 
 const VolunteersPage: FC = () => {
+	const mulProperties = classNames(styles.volunteersContainer, scroll.container);
 	const [volunteerData, setVolunteerData] = useState<VolunteerType[]>([]);
 
 	useEffect(() => {
@@ -14,10 +17,13 @@ const VolunteersPage: FC = () => {
 	}, []);
 
 	return (
-		<div className={styles.volunteersContainer}>
+		<div className={mulProperties}>
+			<div className={scroll.scroll}>
 			{volunteerData.map((volunteer) => (
 				<ProfileCard key={volunteer.id} volunteer={volunteer} />
 			))}
+			</div>
+			<div className={scroll.fade}></div>
 		</div>
 	);
 };

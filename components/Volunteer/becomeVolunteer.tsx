@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
 import styles from "./becomeVol.module.scss";
 import Image from "next/image";
 import donation from "../../public/DONATION-2.png";
@@ -16,7 +19,9 @@ const BecomeVolunteer = () => {
 					Click the button to sign up and start changing lives. Your
 					contribution matters. Join us in our mission today.
 				</p>
-				<button className={styles.signup}>Sign Up</button>
+				<Link href="/vol_form" className={styles.signup}>
+					Register Now
+				</Link>
 			</div>
 		</section>
 	);
