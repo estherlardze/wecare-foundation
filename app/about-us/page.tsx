@@ -4,7 +4,7 @@ import {AboutFeature, Goal} from '../../components/index'
 
 const page = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
        <Header heading="About us"/>
       <AboutFeature/>
       <Goal/>

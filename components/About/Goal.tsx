@@ -3,8 +3,8 @@ import { goals } from "../../utils/data";
 
 const Goal = () => {
   return (
-    <div className="bg-hero2 bg-cover bg-no-repeat bg-center w-full h-fit sm:h-screen py-12 flex justify-center items-center flex-col">
-      <div className=" mx-[7%] w-[86%] h-fit my-4">
+    <div className="bg-hero2 bg-cover bg-no-repeat bg-center w-full h-fit md:h-[100vh] py-12 flex justify-center items-center flex-col">
+      <div className=" mx-[7%] 2xl:w-[1536px] 2xl:mx-auto w-[86%] h-fit my-4">
         <div className="my-12 flex flex-col justify-center items-center text-black/80">
           <h1 className="text-2xl font-semibold">HELP IS OUR GOAL</h1>
           <h3 className="text-4xl font-bold mt-3 text-center">What Make Us Different</h3>
@@ -14,6 +14,7 @@ const Goal = () => {
           {goals.map((goal) => (
             <article
               key={goal.id}
+              data-aos="zoom-in"
               className="col-span-4 md:col-span-2 lg:col-span-1 flex flex-col justify-center items-center text-black/80 hover:bg-white hover:rounded-3xl hover:shadow-2xl py-6 cursor-pointer"
             >
               <h1 className="">

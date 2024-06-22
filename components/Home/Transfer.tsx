@@ -5,8 +5,8 @@ import mobile from "../../public/mobile.jpg";
 
 const Transfer = () => {
   return (
-    <div className="w-[86%] mx-[7%] my-[100px]  text-black/80">
-      <div className="">
+    <div className="w-[86%] mx-[7%] my-[100px]  text-black/80" id='donate'>
+      <div className="" data-aos="fade-up">
         <h1 className="text-center text-red-700 text-2xl sm:text-3xl font-bold">
           YOUR LITTLE CAN SAVE A LIFE.
         </h1>
@@ -16,7 +16,7 @@ const Transfer = () => {
       </div>
 
       <div className="mt-10 grid grid-cols-2 gap-6">
-        <div className="col-span-2 sm:col-span-1">
+        <div className="col-span-2 sm:col-span-1" data-aos="fade-right">
             <p className="underline mb-6">MOBILE MONEY</p>
             <p>0557129744</p>
             <p className="my-4">John Acquah Newman</p>
@@ -24,7 +24,7 @@ const Transfer = () => {
           <Image src={mobile} alt="mobile" width={400} height={400} className="mt-4"/>
         </div>
         
-        <div className="col-span-2 sm:col-span-1">
+        <div className="col-span-2 sm:col-span-1" data-aos="fade-left">
           <p className="underline mb-6">BANK TRANSFER</p>
           <p>
             Account Name:{" "}

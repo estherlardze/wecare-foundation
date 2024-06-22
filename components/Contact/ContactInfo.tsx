@@ -1,14 +1,16 @@
-import React from "react";
 import { contacts } from "../../utils/data";
 
 
 const ContactInfo = () => {
+
+
+
   return (
-    <section className="my-[100px] text-black/80 grid grid-cols-5 gap-10 md:gap-5 mx-[7%] w-[86%] items-center">
-      <div className=" w-full h-full col-span-5 md:col-span-3">
+    <section className="my-[100px] text-black/80 grid grid-cols-5 gap-10 md:gap-5 w-[90%] sm:w-[90%] mx-auto items-center">
+      <div className=" w-full h-full col-span-5 md:col-span-3" data-aos="fade-right">
         <h1 className="text-2xl font-semibold">contact us</h1>
         <h2 className="text-3xl font-bold my-3">Get in Touch</h2>
-        <p>
+        <p className="2xl:text-lg">
           We are excited to connect with you! Whether you have a question,
           feedback, or just want to say hello, we are here to listen and assist.
           Please reach out to us using the contact form below, and one of our
@@ -17,11 +19,12 @@ const ContactInfo = () => {
         </p>
       </div>
 
-      <div className="mt-4 col-span-5 md:col-span-2">
+      <div className="mt-4 col-span-5 md:col-span-2" aos-data="fade-left">
         {contacts.map((contact) => (
           <article
             key={contact.id}
             className="flex flex-col sm:flex-row gap-2 sm:gap-6 mb-3"
+            data-aos="fade-left"
           >
             <h1 className="">
               <contact.icon

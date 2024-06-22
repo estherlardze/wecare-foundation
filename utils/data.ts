@@ -5,6 +5,7 @@ import { IoCall } from "react-icons/io5";
 import { BsSendFill } from "react-icons/bs";
 import { SlBookOpen } from "react-icons/sl";
 import ceo from '../public/Amo Kofi.jpg'
+import ceo2 from '../public/JN8.jpg'
 import { TbHelpTriangleFilled } from "react-icons/tb";
 
 export const features = [
@@ -25,10 +26,10 @@ export const features = [
 export const  comments = [
     {
         id:1,
-        name:'Amo Kofi Asare ',
+        name:'John Aquah Newman Thompson', 
         position:'Co-Founder',
-        image:ceo,
-        content: "Every child deserves a chance to fight for their health, regardless of their background. That's why we started the WCHF to ensure that everysick child has access to the care they need, no matter what theirfamily can afford"
+        image:ceo2,
+        content: "To each there comes in their lifetime a special moment when they are figuratively tapped on the shoulder and offered the chance to do a very special thing, unique to them and fitted to their talents. What a tragedy if that moment finds them unprepared or unqualified for that which could have been their finest hour. "
     },
     {
         id:2,
@@ -36,55 +37,26 @@ export const  comments = [
         position:'Co-Founder',
         image:ceo,
         content: "Every child deserves a chance to fight for their health, regardless of their background. That's why we started the WCHF to ensure that everysick child has access to the care they need, no matter what theirfamily can afford"
-    },
-    {
-        id:3,
-        name:'Amo Kofi Asare ',
-        position:'Co-Founder',
-        image:ceo,
-        content: "Every child deserves a chance to fight for their health, regardless of their background. That's why we started the WCHF to ensure that everysick child has access to the care they need, no matter what theirfamily can afford"
-    },
-    {
-        id:4,
-        name:'Amo Kofi Asare ',
-        position:'Co-Founder',
-        image:ceo,
-        content: "Every child deserves a chance to fight for their health, regardless of their background. That's why we started the WCHF to ensure that everysick child has access to the care they need, no matter what theirfamily can afford"
-    },
-    {
-        id:5,
-        name:'Amo Kofi Asare ',
-        position:'Co-Founder',
-        image:ceo,
-        content: "Every child deserves a chance to fight for their health, regardless of their background. That's why we started the WCHF to ensure that everysick child has access to the care they need, no matter what theirfamily can afford"
-    },
-    {
-        id:6,
-        name:'Amo Kofi Asare ',
-        position:'Co-Founder',
-        image:ceo,
-        content: "Every child deserves a chance to fight for their health, regardless of their background. That's why we started the WCHF to ensure that everysick child has access to the care they need, no matter what theirfamily can afford"
-    }
+    }]
 
-]
 
 export const contacts = [
     {
         id:1,
         title:'Visit us',
-        content:'92 Bowery St., New York, NY 10013, USA',
+        content:'GW-0101-2291, Amasaman, Accra',
         icon:FaLocationDot
     },
     {
-        id:1,
+        id:2,
         title:'Mail us',
-        content:'bighearts.donation@mail.com',
+        content:' wchf.org@gmail.com',
         icon:BsSendFill
     },
     {
-        id:1,
+        id:3,
         title:'Call us',
-        content:'+1 (880) 555 353 505',
+        content:'+233 50 361 4304 / +233 20 668 9419',
         icon:IoCall
     }
 
