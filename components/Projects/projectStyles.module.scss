@@ -2,9 +2,11 @@
 	display: flex;
 	width: 85%;
 	height: 30rem;
-	border: 2px solid black;
+	// border: 2px solid black;
+	border-radius: 1rem;
+	// box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.123);
 	padding: 1rem;
-	margin:  2rem 0;
+	margin: 2rem 0;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
@@ -22,38 +24,50 @@
 .imageContainer {
 	width: 50%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
 
 	@media (max-width: 768px) {
 		width: 100%;
 		height: auto;
+		// background-color: red;
 	}
 
 	@media (min-width: 768px) and (max-width: 1024px) {
-		width: 50%; 
+		width: 80%;
 		// float: left;
 		align-self: center;
-		margin-right: 1rem; 
-		height: auto;
+		margin-right: 1rem;
+		height: 70%;
+	}
 
+	h6 {
+		font-size: 0.7rem;
+		color: #777777;
+		margin-top: 1rem;
 	}
 }
 
+.link {
+	color: rgb(226, 28, 28);
+	font-weight: bold;
+}
 .image {
 	width: 100%;
-	height: 100%;
+	height: 85%;
 	object-fit: cover; /* Ensure the image covers the container */
 }
 
 .descriptionContainer {
 	width: 50%;
 	height: 100%;
-	background-color: #f0f0f0;
+	// background-color: #f0f0f0;
 	padding: 1rem;
 	box-sizing: border-box;
 
 	@media (max-width: 768px) {
 		width: 100%;
-		height: auto;
+		height: 50%;
 	}
 
 	@media (min-width: 768px) and (max-width: 1024px) {
@@ -62,24 +76,25 @@
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		color: red;
 		margin-bottom: 1.2rem;
 		font-weight: bold;
 
 		@media (max-width: 768px) {
-			font-size: 1.7rem;
+			font-size: 1.3rem;
 		}
 	}
 
 	p {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		color: #383636;
 		line-height: 1.5;
 		margin: 0;
+		text-align: justify;
 
 		@media (max-width: 768px) {
-			font-size: 1.0rem;
+			font-size: 0.9rem;
 			margin-bottom: 1rem;
 		}
 
@@ -87,5 +102,61 @@
 			width: auto; /* Allow paragraph to take remaining width */
 			margin: 0; /* Ensure no additional margins */
 		}
+	}
+}
+
+.gallery {
+	width: 85%;
+	height: auto;
+	display: flex;
+	align-self: center;
+	// gap: 1rem;
+	justify-content: space-between;
+	flex-wrap: wrap; /* Allow items to wrap to the next line */
+	// padding: 1rem;
+	background-color: #f8f8f8;
+	// box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+	border-radius: 10px;
+
+	div {
+		width: calc(33.33% - 1rem); /* Three items per row with gap considered */
+		height: 30rem; /* Fixed height for uniformity */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #fff;
+		padding: 0.5rem;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.432);
+		border-radius: 8px;
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: translateY(-0.5rem);
+		}
+
+		p {
+			font-size: 0.7rem;
+			color: #777777;
+			text-align: justify;
+			margin-top: 0.5rem;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 2rem; /* One item per row */
+			margin-top: 2rem;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		div {
+			width: calc(50% - 1rem); /* Two items per row */
+		}
+	}
+
+	@media (max-width: 768px) {
+		div {
+			width: 100%; /* One item per row */
+		}
+		width: 100%;
 	}
 }

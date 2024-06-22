@@ -1,26 +1,70 @@
+// {
+//   "compilerOptions": {
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "noEmit": true,
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "jsx": "preserve",
+//     "incremental": true,
+//     "plugins": [
+//       {
+//         "name": "next"
+//       }
+//     ],
+//     "paths": {
+//       "@/*": ["./*"]
+//     },
+//     "types": [
+//       "@react-email/components"
+//       // Add other types if needed
+//     ]
+//   },
+//   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Volunteer/volunteer_form/emailApi.tsx"],
+//   "exclude": ["node_modules"]
+// }
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "resolveJsonModule": true,
     "incremental": true,
+    "allowJs": true,
+    "types": [
+      "react",
+      "node"
+    ],
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
