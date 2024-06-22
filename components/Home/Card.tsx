@@ -13,8 +13,8 @@ export type CardProps ={
 
 const Card = ({name, position, image, content} : CardProps) => {
   return (
-    <section>
-      <div className="bg-white w-[300px] rounded-md h-fit p-4 shadow-md">
+    <section data-aos="zoom-in">
+      <div className="bg-white rounded-md h-fit p-4 shadow-md">
         <q className="text-lg text-gray-700  leading-10">
           {content}
         </q>
@@ -23,9 +23,7 @@ const Card = ({name, position, image, content} : CardProps) => {
         <Image
           src={image}
           alt="ceo"
-          width={50}
-          height={100}
-          className="rounded-[30px]"
+          className="rounded-full w-[60px] h-[60px]"
         />
         <div>
           <h1 className="text-xl text-black/80 font-semibold">
