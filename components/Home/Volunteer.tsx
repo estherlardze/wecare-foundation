@@ -2,6 +2,7 @@ import React from 'react'
 import { FaHandHoldingHeart } from "react-icons/fa";
 import hero from '../../public/hero2.jpg'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Voluteer = () => {
   return (
@@ -12,10 +13,10 @@ const Voluteer = () => {
       <div className='grid grid-cols-2 gap-8 mt-10 justify-center items-center'>
          <div className='col-span-2 md:col-span-1 flex flex-col gap-6' data-aos="fade-right">
             <h1 className='text-xl sm:text-2xl font-semibold'>Join our dedicated team of changemakers and make a positive difference in comunities. Volunteer with the We Care health foundation today!</h1>
-            <div className="px-4 py-2 flex gap-4 w-fit bg-white cursor-pointer duration-300 text-red-700 rounded border-2 border-red-700 hover:text-white hover:border-black hover:bg-black transition-all">
+            <Link href='/volunteer' className="px-4 py-2 flex gap-4 w-fit bg-white cursor-pointer duration-300 text-red-700 rounded border-2 border-red-700 hover:text-white hover:border-black hover:bg-black transition-all">
               <button className='font-semibold uppercase'>Volunteer Now</button> 
             <FaHandHoldingHeart size={30}/>
-          </div>
+          </Link>
          </div>
 
          <div className='col-span-2 md:col-span-1' data-aos="fade-left">

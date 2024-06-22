@@ -5,7 +5,7 @@ import mobile from "../../public/mobile.jpg";
 
 const Transfer = () => {
   return (
-    <div className="w-[86%] mx-[7%] my-[100px]  text-black/80">
+    <div className="w-[86%] mx-[7%] my-[100px]  text-black/80" id='donate'>
       <div className="" data-aos="fade-up">
         <h1 className="text-center text-red-700 text-2xl sm:text-3xl font-bold">
           YOUR LITTLE CAN SAVE A LIFE.

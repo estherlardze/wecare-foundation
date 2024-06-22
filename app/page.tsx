@@ -9,7 +9,7 @@ export default function Home() {
       <Features/>
       <Donations/>
       <Volunteer/>
-      {/* <Message/> */}
+       <Message/> 
       <Transfer/>
     </main>
   );
