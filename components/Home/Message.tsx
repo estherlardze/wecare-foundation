@@ -12,6 +12,7 @@ const Message = () => {
         <div className="flex justify-center flex-col sm:flex-row items-center gap-5 w-[80%] mx-auto">
           {comments.map((comment) => (
               <Card
+               key={comment.id}
                 name={comment.name}
                 position={comment.position}
                 image={comment.image}

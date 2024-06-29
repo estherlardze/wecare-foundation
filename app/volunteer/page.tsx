@@ -17,7 +17,7 @@ const Page = () => {
 					Interested in volunteering with We Care Foundation?
 				</h1>
 				<p className={styles.p}>
-					Here's all you need to know about joining our cause. For any
+					Here&apos;s all you need to know about joining our cause. For any
 					inquiries, feel free to reach out
 					<Link href="/contact">
 						<span className={styles.link}> get involved with us</span>

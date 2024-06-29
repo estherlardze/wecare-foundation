@@ -5,7 +5,7 @@ import {ContactInfo, Form} from '../../components/index'
 import AOS from  "aos";
 import "aos/dist/aos.css";
 
-const page = () => {
+const Contact = () => {
 
   useEffect(() => {
     AOS.init({
@@ -22,4 +22,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Contact
