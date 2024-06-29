@@ -6,8 +6,8 @@ const ContactInfo = () => {
 
 
   return (
-    <section className="my-[100px] text-black/80 grid grid-cols-5 gap-10 md:gap-5 w-[90%] sm:w-[90%] mx-auto items-center">
-      <div className=" w-full h-full col-span-5 md:col-span-3" data-aos="fade-right">
+    <section className="my-[100px] container text-black/80 grid grid-cols-5 2xl:grid-cols-6 gap-10 md:gap-16 w-[90%] sm:w-[90%] mx-auto items-center">
+      <div className=" w-full h-full col-span-5 md:col-span-3 2xl:col-span-3" data-aos="fade-right">
         <h1 className="text-2xl font-semibold">contact us</h1>
         <h2 className="text-3xl font-bold my-3">Get in Touch</h2>
         <p className="2xl:text-lg">
@@ -19,7 +19,7 @@ const ContactInfo = () => {
         </p>
       </div>
 
-      <div className="mt-4 col-span-5 md:col-span-2" aos-data="fade-left">
+      <div className="mt-4 col-span-5 md:col-span-2 2xl:col-span-3" aos-data="fade-left">
         {contacts.map((contact) => (
           <article
             key={contact.id}

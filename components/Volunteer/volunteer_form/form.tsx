@@ -2,6 +2,8 @@
 
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const VolunteerForm = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -41,20 +43,28 @@ const VolunteerForm = () => {
           process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
           process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
           formRef.current,
-          process.env.NEXT_PUBLIC_EMAILJS_USER_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
           // { da0teTime } // Include the dateTime as additional form data
         );
-        console.log("Email sent successfully:", result.text);
-        alert("Form submitted successfully!");
+        toast.success("Form submitted successfully");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          address: "",
+          availability: "",
+          message: "",
+        });
       } catch (error) {
-        console.error("Error sending email:", error);
-        alert("An error occurred. Please try again.");
+        toast.error("Unable to submit form!");
       }
     }
   };
 
   return (
     <section className="relative top-[20px]">
+      <ToastContainer position="top-center" />
       <div className="max-w-2xl p-8 bg-white rounded-md shadow-md mx-auto">
         <h2 className="text-2xl font-bold mb-6">Volunteer Sign Up</h2>
         <form ref={formRef} onSubmit={handleSubmit}>
