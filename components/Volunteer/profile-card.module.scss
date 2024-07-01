@@ -8,7 +8,7 @@
 }
 
 .profileCard {
-	// border: 1px solid #a70606;
+	border: 1px solid #f7646455;
 	border-radius: 0.5rem;
 	box-shadow: 0 0.15rem 0.2rem rgba(0, 0, 0, 0.144);
 	display: flex;
@@ -16,28 +16,28 @@
 	margin: 1rem;
 	overflow: hidden;
 	width: 15rem;
-	max-width: 15rem; // Adjust as needed to reduce the width of each card
+	max-width: 15rem; 
 	box-sizing: border-box;
 	background-color: #fff;
 	transition: transform 0.3s ease;
-	height: 25rem; // Adjust the height as needed
+	height: 25rem;
 
 	&:hover {
 		transform: translateY(-0.5rem);
 	}
 
 	@media (min-width: 768px) {
-		max-width: calc(50% - 2rem); // Two cards per row, considering margins
+		max-width: calc(50% - 2rem); 
 	}
 
 	@media (min-width: 1024px) {
-		max-width: calc(33.33% - 2rem); // Three cards per row, considering margins
+		max-width: calc(33.33% - 2rem); 
 	}
 }
 
 .volunteerCard {
-	width: 100%; // Adjust as needed
-	height: 70%; // Adjust as needed
+	width: 100%; 
+	height: 70%; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -74,7 +74,7 @@
 	.rolePosition {
 		font-size: 0.9rem;
 		font-weight: 500;
-		color: #666;
+		color:  #f44141;
 	}
 }
 
@@ -86,33 +86,33 @@
 	height: 30%;
 	// margin-bottom: 1rem;
 
-	.descriptionText {
-		font-size: 0.75rem;
-		color: #333;
-		margin: 0;
-		width: 100%;
-		text-wrap: wrap;
-	}
+	// .descriptionText {
+	// 	font-size: 0.75rem;
+	// 	color: #333;
+	// 	margin: 0;
+	// 	width: 100%;
+	// 	text-wrap: wrap;
+	// }
 }
 
-.contactIcons {
-	padding-left: 1rem;
-	text-align: center;
-	margin-bottom: 1rem;
+// .contactIcons {
+// 	padding-left: 1rem;
+// 	text-align: center;
+// 	margin-bottom: 1rem;
 
-	.socialMediaIcons {
-		display: flex;
-		gap: 1rem;
+// 	.socialMediaIcons {
+// 		display: flex;
+// 		gap: 1rem;
 
-		.icon {
-			font-size: 1rem;
-			color: #f72424;
-			cursor: pointer;
-			transition: color 0.3s ease;
+// 		.icon {
+// 			font-size: 1rem;
+// 			color: #f72424;
+// 			cursor: pointer;
+// 			transition: color 0.3s ease;
 
-			&:hover {
-				color: #ff2828;
-			}
-		}
-	}
-}
+// 			&:hover {
+// 				color: #ff2828;
+// 			}
+// 		}
+// 	}
+// }

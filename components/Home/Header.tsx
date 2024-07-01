@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-hero bg-cover bg-no-repeat bg-center mt-[60px] w-full h-[100vh] bg-fixed">
-      <div className="bg-black/50 h-[100vh] text-white gap-4 w-full">
+    <div className="bg-hero bg-cover bg-no-repeat bg-center mt-[60px]  h-[60vh] sm:h-[100vh] w-full 2xl:h-[60vh] bg-fixed">
+      <div className="bg-black/50 h-[60vh] sm:h-[100vh] text-white 2xl:h-[60vh] gap-4 w-full">
         <div className="w-[86%] mx-[7%] flex flex-col items-center justify-center h-[100vh]">
           <h1 className="font-bold text-xl sm:text-2xl mb-4">
             We are creating a brighter tomorrow

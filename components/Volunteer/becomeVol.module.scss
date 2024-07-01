@@ -12,7 +12,7 @@
 		border: 1px solid #ccc;
 		border-radius: 0.5rem;
 		box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-		display: flex;
+		
 		flex-direction: column;
 		margin: 1rem;
 		overflow: hidden;
@@ -20,6 +20,10 @@
 		width: 90%;
 		box-sizing: border-box;
 		height: 35rem;
+	}
+	@media only screen and (max-width: 900px) {
+		flex-direction: column;
+	
 	}
 }
 
@@ -33,6 +37,9 @@
 		height: 50%;
 		border-radius: 1rem 1rem 0 0;
 	}
+	@media only screen and (max-width: 900px) {
+		width: 100%;
+	}
 }
 
 .image {
@@ -43,6 +50,9 @@
 	@media only screen and (max-width: 600px) {
 		border-radius: 0.5rem 0.5rem 0 0;
 	}
+	@media only screen and (max-width: 900px) {
+		border-radius: 0.5rem 0.5rem 0 0;
+	}
 }
 
 .register {
@@ -51,7 +61,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: rgb(247, 22, 22);
+	background-color:  #b91c1c;
 	padding: 0 3rem;
 	color: white;
 	border-radius: 0 1rem 1rem 0;
@@ -62,6 +72,11 @@
 		padding: 1.2rem; /* Adjust padding as needed */
 		border-radius: 0 0 0.5rem 0.5rem;
 		text-align: center;
+	}
+
+	@media only screen and (max-width: 900px) {
+		width: 100%;
+		border-radius: 0 0 0.5rem 0.5rem;
 	}
 }
 
@@ -80,6 +95,9 @@
 	@media only screen and (max-width: 600px) {
 		line-height: 1.4rem;
 		font-size: 1rem;
+	}
+	@media only screen and (max-width: 900px) {
+		width: 100%;
 	}
 }
 
@@ -110,7 +128,7 @@
 		margin: 0 auto;
 
 		&:hover {
-			background-color: #005bb5;
+			background-color:  #b91c1c;
 		}
 	}
 
@@ -119,5 +137,8 @@
 		color: white;
 		border: white;
 		border: 0.12rem solid white;
+	}
+	@media only screen and (max-width: 900px) {
+
 	}
 }

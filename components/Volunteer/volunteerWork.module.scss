@@ -16,12 +16,20 @@
 		max-width: 25rem;
 		width: 100%;
 		box-sizing: border-box;
-		height: auto; // Adjust height for small screens
+		height: auto; 
 	}
+
+	@media only screen and (max-width: 900px) {
+		flex-direction: column;
+		width: 100%;
+		height: 50vh;
+		margin-bottom: 2rem;
+	
+		}
 }
 
 .imageWrapper {
-	width: 50%; // Adjust width for horizontal layout
+	width: 50%;
 	height: 100%;
 	border-radius: 0.5rem 0 0 0.5rem;
 
@@ -29,6 +37,9 @@
 		width: 100%;
 		height: auto; // Adjust height for vertical layout
 		border-radius: 0.5rem 0.5rem 0 0;
+	}
+	@media only screen and (max-width: 900px) {
+		width: 100%;
 	}
 }
 
@@ -39,8 +50,8 @@
 	border-radius: 0.5rem 0 0 0.5rem;
 
 	@media (min-width: 1024px) {
-		height: 100%; // Ensure the image takes full height in horizontal layout
-		object-fit: cover; // Adjust object-fit to cover
+		height: 100%; 
+		object-fit: cover; 
 	}
 	@media only screen and (max-width: 600px) {
 		border-radius: 0.5rem 0.5rem 0 0;
@@ -59,17 +70,21 @@
 	border-radius: 0 1rem 1rem 0;
 
 	@media (min-width: 1024px) {
-		width: 50%; // Adjust width for horizontal layout
-		height: auto; // Adjust height to fit content
-		text-align: left; // Align text to left for better readability
-		padding: 2rem; // Adjust padding for better spacing
+		width: 50%; 
+		height: auto; 
+		text-align: left;
+		padding: 2rem; 
 	}
 
 	@media only screen and (max-width: 600px) {
 		width: 100%;
-		height: auto; // Adjust height for vertical layout
+		height: auto;
 		border-radius: 0 0 0.5rem 0.5rem;
 		text-align: center;
+	}
+	
+	@media only screen and (max-width: 900px) {
+		width: 100%;
 	}
 }
 
