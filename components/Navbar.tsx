@@ -65,19 +65,19 @@ const Navbar = () => {
 
       <div className={`fixed top-0 left-0 w-[80%] min-h-screen bg-white transition-transform duration-500 ease-in-out ${menu ? 'translate-x-0' : '-translate-x-full'} md:hidden z-10`}>
         <div className="flex flex-col items-start justify-center p-6 gap-y-4 pt-12">
-          <Link href="/" className="font-semibold cursor-pointer w-full border-b border-gray-300" onClick={handleMenu}>
+          <Link href="/" className="font-semibold cursor-pointer my-2 w-full border-b border-gray-300" onClick={handleMenu}>
             Home
           </Link>
-          <Link href="/about-us" className="font-semibold w-full cursor-pointer border-b border-gray-300" onClick={handleMenu}>
+          <Link href="/about-us" className="font-semibold w-full my-2 cursor-pointer border-b border-gray-300" onClick={handleMenu}>
             About us
           </Link>
-          <Link href="/projects" className="font-semibold cursor-pointer w-full border-b border-gray-300" onClick={handleMenu}>
+          <Link href="/projects" className="font-semibold cursor-pointer my-2 w-full border-b border-gray-300" onClick={handleMenu}>
             Projects
           </Link>
-          <Link href="/volunteer" className="font-semibold cursor-pointer w-full border-b border-gray-300" onClick={handleMenu}>
+          <Link href="/volunteer" className="font-semibold cursor-pointer my-2 w-full border-b border-gray-300" onClick={handleMenu}>
             Volunteer
           </Link>
-          <Link href="/contact" className="font-semibold cursor-pointer w-full border-b border-gray-300" onClick={handleMenu}>
+          <Link href="/contact" className="font-semibold cursor-pointer my-2 w-full border-b border-gray-300" onClick={handleMenu}>
             Contact
           </Link>
           <Link

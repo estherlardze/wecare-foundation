@@ -35,31 +35,32 @@
     flex-direction: column;
     width: 85%;
     margin-top: 2rem;
-    text-align: center;
+    // text-align: center;
   
     h2 {
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 1rem;
-      color: red;
+      color:  #b91c1c;
   
       @media (max-width: 768px) {
-        text-align: center;
+        text-align: justify;
       }
     }
   
     p {
-      text-align: center; 
+      text-align: justify; 
     }
   }
   
   .div {
     width: 85%;
     align-self: center;
-    text-align: center; // Ensure text is centered within div
+    // text-align: justify; 
   
     p {
-      text-align: center; // Ensure text is centered within p tags inside div
+      text-align: center; 
+      font-size: 0.9rem;
     }
   }
   
