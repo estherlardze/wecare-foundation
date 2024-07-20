@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 type HeadingProps = {
   heading: string,
-  className?: string
+  className?: string,
 };
 
 const Header = ({ heading, className }: HeadingProps) => {
