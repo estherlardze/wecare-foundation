@@ -16,6 +16,10 @@ const config: Config = {
         about: "url('/about-us_03.png')"
       },
     },
+
+    fontFamily: {
+      slang: ["Playwrite ZA", "cursive"],
+    }
   },
   plugins: [],
 };

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Features = () => {
   return (
-    <div className="bg-black/5">
+    <div className="bg-black/5 w-full">
       <section className="my-[70px] text-black/90 flex flex-col md:flex-row gap-10 md:gap-5 mx-[7%] w-[86%] overflow-hidden">
         <div className="text-left flex flex-col gap-7" data-aos="fade-right">
           <h1 className="text-2xl sm:text-3xl font-semibold">
